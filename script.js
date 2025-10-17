@@ -60,3 +60,43 @@
 // const { name, age } = person;
 
 // console.log(name);
+
+const colors = ["Red", "Green", "Blue"];
+const [first, ...second] = colors;
+
+console.log(first, second);
+
+const person = { name: "Alice", age: 25, city: "Delhi" };
+person.age = 20;
+console.log(person.age);
+
+const nums = [10, 20, 30];
+const [fistEl, , restEl] = nums;
+console.log(fistEl, restEl);
+
+const car = { brand: "Tesla" };
+const { brand: carBrand, model = "Model S" } = car;
+console.log(carBrand, model);
+
+const user = { id: 1, info: { firstName: "John", lastName: "Doe" } };
+
+const {
+  id,
+  info,
+  info: { lastName, firstName },
+} = user;
+
+console.log(id, info, lastName, firstName);
+
+function sum(...args) {
+  return args.reduce((acc, cur) => acc + cur);
+}
+
+console.log(sum(1, 2, 3, 4));
+
+const student = { name: "Manjot", age: 22, course: "CSE", city: "Ludhiana" };
+const { name, age, ...rest } = student;
+console.log(name, age, rest);
+
+const fruits = ["apple", "banana", "cherry", "date"];
+const [a, b, ...res] = fruits;

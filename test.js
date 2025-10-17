@@ -11,5 +11,5 @@ console.log(Array.from(li));
 let numbers = Array.from([1, 2, 3, 4], (x) => x > 2);
 console.log(numbers);
 
-let arrayLen = Array.from({ length: 5 }, (_, i) => i + 1);
-console.log(arrayLen);
+let arrayLen = Array.from({ length: 10 }, (_, i) => 0);
+console.log(arrayLen.keys);
