@@ -1,0 +1,27 @@
+{
+  "name": "classwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eventLogger.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon httpbasic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ylcharan/js-class.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ylcharan/js-class/issues"
+  },
+  "homepage": "https://github.com/ylcharan/js-class#readme",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "colors": "^1.4.0",
+    "nodemon": "^3.1.10"
+  }
+}

@@ -100,3 +100,15 @@ console.log(name, age, rest);
 
 const fruits = ["apple", "banana", "cherry", "date"];
 const [a, b, ...res] = fruits;
+
+const arr1 = [1, 2, 3, 4, 5];
+
+const addedItems = [...arr1, 6, 7];
+
+arr1.push(10);
+
+console.log(arr1, addedItems);
+
+const str = "Hello";
+const strToArr = [...str];
+console.log(strToArr);

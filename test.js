@@ -1,15 +1,16 @@
-var str1 = "Lakshmi";
-var str2 = "Charan";
+// Demonstrate Destructuring, Spread Operator, Modules
 
-console.log(Array.from(str1));
+const student = { name: "Charan", regNo: 12300920, city: "Vizag" };
+const { name, regNo, city } = student;
 
-let list = [1, 2, 3, 4, 5, 2, 5];
+const arr = ["red", "blue", "green"];
+const [red, blue] = arr;
+console.log(red, blue);
 
-let li = new Set(list);
-console.log(Array.from(li));
+const arr1 = [...arr, "lowda", "erripuk"];
+console.log(arr1);
 
-let numbers = Array.from([1, 2, 3, 4], (x) => x > 2);
-console.log(numbers);
-
-let arrayLen = Array.from({ length: 10 }, (_, i) => 0);
-console.log(arrayLen.keys);
+const user = { name: "Charan", age: 21 };
+const details = { country: "India", college: "LPU" };
+const merged = { ...user, ...details };
+console.log(merged);
